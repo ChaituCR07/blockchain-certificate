@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOR Certificate</title>
+     <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link rel="shortcut icon" type="image/png" href="images/certificate.ico"/>
+   <script type="text/javascript" data-main="js/certificate" src="js/lib/require-2.3.6.min.js"></script>
+   <script type="text/javascript" src="js/lib/require-config.js"></script>
+</head>
+<body class="container">
+   <div class="page-header">
+     <h1>Create LOR</h1>
+   </div>
+   <form>
+     <div class="alert alert-success" role="alert" style="display: none">
+		LOR record created.
+	 </div>
+     <div class="form-group">
+	   <input type="text" class="form-control" id="course-title" placeholder="Course or programme title" required="required"/>
+     </div>
+	 <div class="form-group">
+	   <input type="text" class="form-control" id="address" placeholder="Student account address" required="required" pattern=".{42}" title="Address should have 42 characters"/>
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" id="completion-date" onfocus="this.type='date'" onblur="this.type='text'" placeholder="Completion date" required="required"/>
+     </div>
+     <div class="form-group">
+       <input type="text" class="form-control" id="expiry-date" onfocus="this.type='date'" onblur="this.type='text'" placeholder="Expiry date" />
+     </div>
+	 <div class="alert alert-danger" role="alert" style="display: none">
+     </div>
+     <input type="submit" class="btn btn-primary" value="Create LOR"/>
+	 <a href="issuer-certificates.html" class="btn">Back</a>
+   </form>
+</body>
+</html>

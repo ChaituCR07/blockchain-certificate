@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>My LORs</title>
+   <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link rel="shortcut icon" type="image/png" href="images/certificate.ico"/>
+   <script type="text/javascript" data-main="js/student-certificates" src="js/lib/require-2.3.6.min.js"></script>
+   <script type="text/javascript" src="js/lib/require-config.js"></script>
+</head>
+<body class="container">
+   <div class="page-header">
+    <h2>My LORs</h2>
+   </div>
+   <div class="table-responsive">
+    <table class="table table-bordered" style="display: none">
+      <thead>
+        <tr>
+          <th>Issuer</th>
+          <th>Course Title</th>
+          <th>Completion Date</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <a href="index.html" class="btn">Back</a>
+  <div class="modal fade" id="certModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="text-align: center">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Letter of Recommendation</h3>
+        </div>
+        <div class="modal-body" style="text-align: center; background-repeat: no-repeat; background-size: 100% 100%; background-image: url(images/template.gif)">
+          <p><strong>To whom ever it may concern</strong></p>
+          <p >I am writing to wholeheartedly recommend<br/>
+		  <strong><span id="student-name"></span></strong><br/>
+		  who has successfully completed a 2-month internship in the domain of Blockchain at<br/>
+		  <strong><span id="issuer-name"></span></strong><br/>
+		  on <strong><span id="completion-date"></span></strong>.<br/><br/>
+		  <i>Powered by Blockchain LOR Apps</i>
+		  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
